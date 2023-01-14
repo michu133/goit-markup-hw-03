@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
@@ -6,14 +10,33 @@ body {
 .color-blue {
   color: #2196f3;
 }
+.color-white {
+  color: #ffffff;
+}
+.color-black {
+  color: #000;
+}
 .img-descriptions {
   color: #757575;
   font-size: 16px;
   font-weight: 400;
+  text-align: left;
 }
 .img-title {
   font-size: 18px;
   font-weight: 700;
+  text-align: left;
+  margin-bottom: 4px;
+}
+.img-caption {
+  display:flex;
+  flex-direction: column;
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left:24px;
+  border-left: 1px solid #eeee;
+  border-right: 1px solid #eeee;
+  border-bottom: 1px solid #eeee;
 }
 button:hover {
   color: #ffffff;
@@ -41,8 +64,8 @@ ul {
   font-weight: 700;
   font-size: 26px;
   text-decoration: none;
-  padding-left: 215px;
 }
+
 .link:hover {
   color: #2196f3;
 }
@@ -71,6 +94,8 @@ ul {
   font-size: 14px;
   text-decoration: none;
   font-weight: 400;
+  margin-bottom: 9px;
+  margin-top:20px;
 }
 .footer-adress-link:focus {
   color: #2196f3;
@@ -78,11 +103,18 @@ ul {
 .footer-adress-link:hover {
   color: #2196f3;
 }
-.footer-adress-link-alpha {
+.footer-adress-link-alpha-mail {
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
   font-size: 14px;
-  text-decoration: none;
+  margin-bottom: 9px;
+  font-weight: 400;
+}
+.footer-adress-link-alpha {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+  text-decoration:none;
+  font-size: 14px;
   font-weight: 400;
 }
 .footer-adress-link-alpha:hover {
@@ -103,6 +135,7 @@ ul {
 .menu {
   display: flex;
   justify-content: center;
+  margin-bottom:50px;
 }
 .menu > .menu-btn:not(:last-child) {
   margin-right: 8px;
@@ -112,7 +145,9 @@ ul {
   height: 80px;
   border-bottom: 1px solid #ececec;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
+  max-width:1600px;
+  margin: 0 auto;
 }
 
 .header-logo {
@@ -132,13 +167,28 @@ ul {
   margin-left: 364px;
   margin-right: 227px;
   justify-content: space-between;
-  width:295px;
+  width: 295px;
 }
-.card-set{
-  display:flex;
+.card-set {
+  display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 .card {
   flex-basis: calc((100% - 2 * 30px) / 3);
+}
+.page-footer {
+ display:flex;
+ flex-direction: column;
+ background-color: #2f303a;
+ padding-top:60px;
+ padding-bottom:60px;
+ padding-left:215px;
+ max-width:1600px;
+ margin: 0 auto;
+}
+.card-flex {
+  display:flex;
+  flex-direction: column;
+  width:370px;
 }
