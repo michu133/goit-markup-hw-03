@@ -2,7 +2,7 @@
 <html lang="pl">
   <head>
     <meta charset="utf-8" />
-    <title>goit-markup-hw-01</title>
+    <title>Portfolio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -11,164 +11,201 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <a href=""
-        ><b>Web<span style="color: #2196f3">Studio</span></b></a
-      >
-      <nav>
-        <ul>
-          <li><a href="index.html">Agencja</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="">Kontakt</a></li>
-        </ul>
-      </nav>
-      <div>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+48111111111">+48 111 111 111</a>
-      </div>
+      <section class="page-header">
+        <div class="flex-header">
+          <div class="header-logo">
+            <a href="" class="logo-font"
+              ><b
+                ><span class="color-blue">Web</span
+                ><span class="color-black">Studio</span></b
+              ></a
+            >
+          </div>
+          <nav>
+            <ul class="nav-menu">
+              <li class="nav-btn">
+                <a href="/index.html" class="link">Agencja</a>
+              </li>
+              <li class="nav-btn">
+                <a href="/portfolio.html" class="link">Portfolio</a>
+              </li>
+              <li class="nav-btn"><a href="" class="link">Kontakt</a></li>
+            </ul>
+          </nav>
+          <div class="adress-menu">
+            <a href="mailto:info@devstudio.com" class="header-adress-link"
+              >info@devstudio.com</a
+            >
+            <a href="tel:+48111111111" class="header-adress-link"
+              >+48 111 111 111</a
+            >
+          </div>
+        </div>
+      </section>
     </header>
 
     <main>
       <section>
-        <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button">Zamów usługę</button>
+        <div class="banner">
+          <h1 class="banner-text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          <button type="button" class="header-button">Zamów usługę</button>
+        </div>
       </section>
 
-      <section>
-        <ul>
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-        </ul>
+      <section class="lorem-section">
+        <div class="container">
+          <ul class="lorem">
+            <li>
+              <h3>LOREM IPSUM</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li>
+              <h3>LOREM IPSUM</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li>
+              <h3>LOREM IPSUM</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li>
+              <h3>LOREM IPSUM</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section>
-        <h2>Czym się zajmujemy</h2>
-        <ul>
-          <li>
+      <section class="work-section">
+        <div class="container">
+          <h2>Czym się zajmujemy</h2>
+          <div class="work-photos">
             <img
               src="images/img1.jpg"
               alt="iPad leżący na biurku"
               width="370"
               height="294"
             />
-          </li>
-          <li>
             <img
               src="images/img2.jpg"
               alt="Człowiek korzystający z telefonu i laptopa"
               width="370"
               height="294"
             />
-          </li>
-          <li>
+
             <img
               src="images/img3.jpg"
               alt="Człowiek korzystający z tabletu"
               width="370"
               height="294"
             />
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>Nasz zespół</h2>
-        <ul>
+      <div class="team-section">
+        <span class="team-title">Nasz zespół</span>
+        <ul class="card-set">
           <li>
-            <figure>
+            <figure class="team-flex">
               <img
                 src="images/img4.jpg"
                 alt="John Doe"
                 width="270"
                 height="260"
               />
-              <figcaption>
-                <h3>John Doe</h3>
-                <p>Product Designer</p>
+              <figcaption class="team-caption">
+                <h3 class="team-img-title">John Doe</h3>
+                <p class="team-img-descriptions">Product Designer</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="team-flex">
               <img
                 src="images/img5.jpg"
                 alt="John Doe"
                 width="270"
                 height="260"
               />
-              <figcaption>
-                <h3>John Doe</h3>
-                <p>Frontend Developer</p>
+              <figcaption class="team-caption">
+                <h3 class="team-img-title">John Doe</h3>
+                <p class="img-descriptions">Frontend Developer</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="team-flex">
               <img
                 src="images/img6.jpg"
                 alt="John Doe"
                 width="270"
                 height="260"
               />
-              <figcaption>
-                <h3>John Doe</h3>
-                <p>Marketing</p>
+              <figcaption class="team-caption">
+                <h3 class="team-img-title">John Doe</h3>
+                <p class="img-descriptions">Marketing</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="team-flex">
               <img
                 src="images/img7.jpg"
                 alt="John Doe"
                 width="270"
                 height="260"
               />
-              <figcaption>
-                <h3>John Doe</h3>
-                <p>UI Designer</p>
+              <figcaption class="team-caption">
+                <h3 class="team-img-title">John Doe</h3>
+                <p class="img-descriptions">UI Designer</p>
               </figcaption>
             </figure>
           </li>
         </ul>
-      </section>
+      </div>
     </main>
 
     <footer>
-      <a href=""
-        ><b>Web<span style="color: #2196f3">Studio</span></b></a
-      >
-      <address>m. Warszawa, Aleje Jerozolimskie 21</address>
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a href="tel:+48111111111">+48 111 111 111</a>
+      <section class="page-footer">
+        <a href="" class="logo-font"
+          ><b
+            ><span class="color-blue">Web</span
+            ><span class="color-white">Studio</span></b
+          ></a
+        >
+        <address class="footer-adress-link">
+          m. Warszawa, Aleje Jerozolimskie 21
+        </address>
+        <a
+          href="mailto:info@devstudio.com"
+          class="footer-adress-link-alpha-mail"
+          >info@devstudio.com</a
+        >
+        <a href="tel:+48111111111" class="footer-adress-link-alpha"
+          >+48 111 111 111</a
+        >
+      </section>
     </footer>
   </body>
 </html>
