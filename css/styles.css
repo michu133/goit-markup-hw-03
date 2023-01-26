@@ -233,7 +233,7 @@ ul {
 }
 .lorem {
   display: flex;
-  width: 1170px;
+  width: 1200px;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
@@ -346,7 +346,7 @@ ul {
   font-weight: 500;
   margin-bottom: 10px;
 }
-.team-img-descriptions{
+.team-img-descriptions {
   color: #757575;
   font-size: 16px;
   font-weight: 400;
